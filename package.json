@@ -1,0 +1,52 @@
+{
+    "name": "ac3d-syntax",
+    "displayName": "AC3D-Syntax",
+    "description": "Basic syntax highlighting and snippets for AC3D files",
+    "version": "0.0.1",
+    "publisher": "RenanMsV",
+    "author": {
+        "name": "RenanMsV https://github.com/RenanMsV"
+    },
+    "icon": "images/icon.png",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "license": "GPL",
+    "bugs": {
+        "url": "https://github.com/RenanMsV/ac3d-syntax-vscode/issues",
+        "email": "none@none.none"
+    },
+    "repository": {
+        "type": "git",
+        "url" : "https://github.com/RenanMsV/ac3d-syntax-vscode.git"
+    },
+    "homepage": "https://github.com/RenanMsV/ac3d-syntax-vscode",
+    "categories": [
+        "Programming Languages",
+        "Snippets"
+    ],
+    "keywords": [
+        "ac3d",
+        "flightgear"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "ac3d",
+            "aliases": ["AC3D", "ac3d"],
+            "extensions": [".ac"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "ac3d",
+            "scopeName": "source.ac",
+            "path": "./syntaxes/ac3d.tmLanguage.json"
+        }],
+        "snippets": [
+            {
+                "language": "ac3d",
+                "scopeName": "source.ac",
+                "path": "./snippets/ac3d.json"
+            }
+        ]
+    }
+}

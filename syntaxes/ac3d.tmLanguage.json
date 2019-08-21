@@ -1,0 +1,81 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "AC3D",
+	"patterns": [
+		{
+			"include": "#general"
+		},
+		{
+			"include": "#keywords"
+		}
+	],
+	"repository": {
+		"general": {
+			"patterns": [
+				{
+					"begin": "'",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.begin.ac3d"
+						}
+					},
+					"end": "'",
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.end.ac3d"
+						}
+					},
+					"name": "string.quoted.single.ac3d",
+					"patterns": [
+						{
+							"match": "\\\\(x\\h{2}|[0-2][0-7]{,2}|3[0-6][0-7]?|37[0-7]?|[4-7][0-7]?|.)",
+							"name": "constant.character.escape.ac3d"
+						}
+					]
+				},
+				{
+					"begin": "\"",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.begin.ac3d"
+						}
+					},
+					"end": "\"",
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.end.ac3d"
+						}
+					},
+					"name": "string.quoted.double.ac3d",
+					"patterns": [
+						{
+							"match": "\\\\(x\\h{2}|[0-2][0-7]{,2}|3[0-6][0-7]|37[0-7]?|[4-7][0-7]?|.)",
+							"name": "constant.character.escape.ac3d"
+						}
+					]
+				},
+				{
+					"name": "constant.numeric.ac3d",
+					"match": "((\\b[0-9]+)?\\.)?\\b[0-9]+([eE][-+]?[0-9]+)?\\b"
+				},
+				{
+					"name": "constant.numeric.ac3d",
+					"match": "0[x|X][0-9a-fA-F]+"
+				}
+			]
+		},
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.ac3d",
+					"match": "\\b(MATERIAL|rgb|amb|emis|spec|shi|trans|MAT|data|OBJECT group|OBJECT poly|OBJECT light|OBJECT world|name|data lines of|texture|textrep|textoff|subdiv|crease|rot|loc|url|hidden|locked|folded|numvert|numvert lines of|numsurf|SURF|mat|refs|refs lines of|kids)\\b"
+				},
+				{
+					"name": "entity.name.function.ac3d",
+					"match": "\\b(AC3Db|AC3Dc)\\b"
+				}
+			]
+		}
+	},
+	"scopeName": "source.ac"
+}
