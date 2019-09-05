@@ -2,7 +2,7 @@
     "name": "ac3d-syntax",
     "displayName": "AC3D-Syntax",
     "description": "Basic syntax highlighting and snippets for AC3D files",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "RenanMsV",
     "author": {
         "name": "RenanMsV https://github.com/RenanMsV"
