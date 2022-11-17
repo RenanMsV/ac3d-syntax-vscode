@@ -68,7 +68,7 @@
 			"patterns": [
 				{
 					"name": "keyword.ac3d",
-					"match": "\\b(MATERIAL|rgb|amb|emis|spec|shi|trans|MAT|data|OBJECT group|OBJECT poly|OBJECT light|OBJECT world|name|data lines of|texture|textrep|textoff|subdiv|crease|rot|loc|url|hidden|locked|folded|numvert|numvert lines of|numsurf|SURF|mat|refs|refs lines of|kids)\\b"
+					"match": "\\b(MATERIAL|rgb|amb|emis|spec|shi|trans|MAT|data|OBJECT group|OBJECT poly|OBJECT light|OBJECT world|name|data lines of|texture|textrep|textoff|subdiv|crease|rot|loc|url|hidden|locked|folded|numvert|numvert lines of|numsurf|SURF|mat|refs|refs lines of|kids|texrep|texoff)\\b"
 				},
 				{
 					"name": "entity.name.function.ac3d",

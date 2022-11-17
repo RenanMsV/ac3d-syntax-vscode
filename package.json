@@ -1,8 +1,8 @@
 {
     "name": "ac3d-syntax",
-    "displayName": "AC3D-Syntax",
+    "displayName": "Inivis AC3D Syntax",
     "description": "Basic syntax highlighting and snippets for AC3D files",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "Renan-MsV",
     "author": {
         "name": "RenanMsV https://github.com/RenanMsV"
@@ -27,7 +27,9 @@
     ],
     "keywords": [
         "ac3d",
-        "flightgear"
+        "flightgear",
+        "x-plane",
+        "3d"
     ],
     "contributes": {
         "languages": [{
