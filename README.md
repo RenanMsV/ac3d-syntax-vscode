@@ -1,6 +1,6 @@
 # AC3D Syntax and Snippets for Visual Studio Code
 
-[![ac3d-logo](/images/icon.png?raw=true)](https://github.com/RenanMsV/ac3d-syntax)
+[![ac3d-logo](/images/icon.png?raw=true)](https://github.com/RenanMsV/ac3d-syntax-vscode)
 
 [![Version](https://img.shields.io/visual-studio-marketplace/v/Renan-MsV.ac3d-syntax.svg?logo=visual%20studio%20code)](https://marketplace.visualstudio.com/items?itemName=Renan-MsV.ac3d-syntax) [![Rating](https://img.shields.io/visual-studio-marketplace/stars/Renan-MsV.ac3d-syntax.svg?logo=visual%20studio%20code)](https://marketplace.visualstudio.com/items?itemName=Renan-MsV.ac3d-syntax) [![Downloads](https://img.shields.io/visual-studio-marketplace/d/Renan-MsV.ac3d-syntax.svg?logo=visual%20studio%20code)](https://marketplace.visualstudio.com/items?itemName=Renan-MsV.ac3d-syntax) [![Build Status](https://img.shields.io/travis/com/RenanMsV/ac3d-syntax-vscode?logo=travis)](https://travis-ci.com/RenanMsV/ac3d-syntax-vscode) [![GNU General Public License](https://img.shields.io/github/license/RenanMsV/ac3d-syntax-vscode?logo=github)](http://www.gnu.org/licenses/gpl-3.0.en.html)
 
