@@ -1,20 +1,27 @@
 {
-    "material": {
-        "prefix": [
-            "MATERIAL"
-        ],
-        "body": [
-            "MATERIAL \"${1:Material Name}\" rgb ${2:1.0 1.0 1.0}  amb ${3:1.0 1.0 1.0}  emis ${4:1.0 1.0 1.0}  spec ${5:1.0 1.0 1.0}  shi ${6:128}  trans ${7:1.0}"
-        ],
-        "description": "Snippet: Insert a Material."
+    "AC3Db material line": {
+        "description": "Snippet: Insert AC3Db Material Line.",
+        "prefix": "MATERIAL",
+        "body": "MATERIAL \"${1:Material Name}\" rgb ${2:1.0 1.0 1.0}  amb ${3:1.0 1.0 1.0}  emis ${4:1.0 1.0 1.0}  spec ${5:1.0 1.0 1.0}  shi ${6:128}  trans ${7:1.0}"
     },
-    "texture": {
-        "prefix": [
-            "texture"
-        ],
+    "AC3Dc material block": {
+        "description": "Snippet: Insert AC3Dc Material Block.",
+        "prefix": "MAT",
         "body": [
-            "texture \"${1:path/to/texture.png}\""
-        ],
-        "description": "Snippet: Insert a texture."
+            "MAT \"${1:Material Name}\"",
+            "rgb ${2:1.0 1.0 1.0}",
+            "amb ${3:1.0 1.0 1.0}",
+            "emis ${4:1.0 1.0 1.0}",
+            "spec ${5:1.0 1.0 1.0}",
+            "shi ${6:64}",
+            "trans ${7:1}",
+            "data ${8:0}",
+            "ENDMAT"
+        ]
+    },
+    "Insert texture line": {
+        "description": "Snippet: Insert a texture.",
+        "prefix": "texture",
+        "body": "texture \"${1:path/to/texture.png}\""
     }
 }

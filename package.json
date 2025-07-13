@@ -18,7 +18,7 @@
     },
     "repository": {
         "type": "git",
-        "url" : "https://github.com/RenanMsV/ac3d-syntax-vscode.git"
+        "url": "https://github.com/RenanMsV/ac3d-syntax-vscode.git"
     },
     "homepage": "https://github.com/RenanMsV/ac3d-syntax-vscode",
     "categories": [
@@ -32,17 +32,21 @@
         "3d"
     ],
     "contributes": {
-        "languages": [{
-            "id": "ac3d",
-            "aliases": ["AC3D", "ac3d"],
-            "extensions": [".ac"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "ac3d",
-            "scopeName": "source.ac",
-            "path": "./syntaxes/ac3d.tmLanguage.json"
-        }],
+        "languages": [
+            {
+                "id": "ac3d",
+                "aliases": ["AC3D"],
+                "extensions": [".ac"],
+                "configuration": "./languages/ac3d/language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "ac3d",
+                "scopeName": "source.ac",
+                "path": "./grammars/ac3d.tmLanguage.json"
+            }
+        ],
         "snippets": [
             {
                 "language": "ac3d",
@@ -50,5 +54,18 @@
                 "path": "./snippets/ac3d.json"
             }
         ]
-    }
+    },
+    "main": "./out/extension.js",
+    "activationEvents": [
+        "onLanguage:ac3d"
+    ],
+    "devDependencies": {
+        "@types/node": "^24.0.10",
+        "@types/vscode": "^1.0.0",
+        "typescript": "^5.8.3",
+        "vscode-languageserver": "^9.0.1",
+        "vscode-languageclient": "^9.0.1",
+        "vscode-languageserver-textdocument": "^1.0.12"
+    },
+    "dependencies": {}
 }

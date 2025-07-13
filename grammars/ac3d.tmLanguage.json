@@ -1,0 +1,48 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "AC3D",
+  "scopeName": "source.ac",
+  "patterns": [
+    {
+        "match": "'(?:\\\\.|[^'\\\\])*'",
+        "name": "string.quoted.single.ac3d"
+    },
+    {
+        "match": "\"(?:\\\\.|[^\"\\\\])*\"",
+        "name": "string.quoted.double.ac3d"
+    },
+    {
+        "match": "0x[0-9a-fA-F]+",
+        "name": "variable.other.ac3d"
+    },
+    {
+        "match": "-?(?:\\d*\\.\\d+|\\d+)",
+        "name": "constant.numeric.ac3d"
+    },
+    {
+        "match": "^AC3D[a-z]",
+        "name": "entity.name.class.ac3d"
+    },
+    {
+        "match": "\\b(MATERIAL|rgb|amb|emis|spec|shi|trans|MAT|ENDMAT|data|name|data lines of|texture|texrep|texoff|subdiv|crease|rot|loc|url|hidden|locked|folded|numvert|numvert lines of|numsurf|SURF|mat|refs|refs lines of|kids)\\b",
+        "name": "keyword.other.ac3d"
+    },
+    {
+        "begin": "\\bOBJECT\\b\\s+",
+        "beginCaptures": {
+            "0": { "name": "keyword.other.ac3d" }
+        },
+        "end": "$",
+        "name": "meta.object.line.ac3d",
+        "patterns": [
+            {
+                "match": ".+",
+                "name": "string.quoted.double.ac3d"
+            }
+        ]
+    }
+  ],
+  "repository": {},
+  "fileTypes": ["ac"],
+  "uuid": "eb4e16e3-d150-4212-9773-884f64e50d9f"
+}
