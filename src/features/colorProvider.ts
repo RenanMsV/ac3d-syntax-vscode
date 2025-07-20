@@ -19,7 +19,7 @@ export function registerColorProvider(context: vscode.ExtensionContext) {
           !text.trimStart().startsWith('amb') &&
           !text.trimStart().startsWith('emis') &&
           !text.trimStart().startsWith('spec')
-        ) continue;
+        ) {continue;}
         
         let match: RegExpExecArray | null;
         while ((match = colorRegex.exec(text))) {
@@ -57,8 +57,8 @@ export function registerColorProvider(context: vscode.ExtensionContext) {
   };
 
   function formatColorValue(value: string): string {
-    if (value === "1.00") return "1";
-    if (value === "0.00") return "0";
+    if (value === "1.00") {return "1";}
+    if (value === "0.00") {return "0";}
     return value;
   }
 

@@ -1,7 +1,7 @@
 {
     "name": "ac3d-syntax",
     "displayName": "Inivis AC3D Syntax",
-    "description": "Basic syntax highlighting and snippets for AC3D files",
+    "description": "Basic LSP, syntax highlighting and snippets for AC3D files",
     "version": "0.0.3",
     "publisher": "Renan-MsV",
     "author": {
@@ -9,7 +9,7 @@
     },
     "icon": "images/icon.png",
     "engines": {
-        "vscode": "^1.0.0"
+        "vscode": "^1.74.0"
     },
     "license": "GPL",
     "bugs": {
@@ -31,13 +31,19 @@
         "x-plane",
         "3d"
     ],
+    "activationEvents": [],
+    "main": "./out/extension.js",
     "contributes": {
         "languages": [
             {
                 "id": "ac3d",
                 "aliases": ["AC3D"],
                 "extensions": [".ac"],
-                "configuration": "./languages/ac3d/language-configuration.json"
+                "configuration": "./languages/ac3d/language-configuration.json",
+                "icon": {
+                    "light": "./images/icon.svg",
+                    "dark": "./images/icon.svg"
+                }
             }
         ],
         "grammars": [
@@ -50,22 +56,34 @@
         "snippets": [
             {
                 "language": "ac3d",
-                "scopeName": "source.ac",
                 "path": "./snippets/ac3d.json"
             }
         ]
     },
-    "main": "./out/extension.js",
-    "activationEvents": [
-        "onLanguage:ac3d"
-    ],
-    "devDependencies": {
-        "@types/node": "^24.0.10",
-        "@types/vscode": "^1.0.0",
-        "typescript": "^5.8.3",
-        "vscode-languageserver": "^9.0.1",
-        "vscode-languageclient": "^9.0.1",
-        "vscode-languageserver-textdocument": "^1.0.12"
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile && npm run lint -- --fix",
+        "test": "vscode-test",
+        "lint": "eslint . --ext .js,.ts",
+        "package": "npm run test && vsce package"
     },
-    "dependencies": {}
+    "devDependencies": {
+        "@eslint/js": "^9.31.0",
+        "@stylistic/eslint-plugin": "^2.13.0",
+        "@types/mocha": "^10.0.1",
+        "@types/node": "^20",
+        "@types/vscode": "^1.73.0",
+        "@vscode/test-cli": "^0.0.8",
+        "@vscode/test-electron": "^2.3.9",
+        "@vscode/vsce": "^3.6.0",
+        "eslint": "^9.31.0",
+        "mocha": "^10.2.0",
+        "typescript": "^5.8.2",
+        "typescript-eslint": "^8.37.0",
+        "vscode-languageclient": "^9.0.1",
+        "vscode-languageserver": "^9.0.1",
+        "vscode-languageserver-textdocument": "^1.0.12"
+    }
 }

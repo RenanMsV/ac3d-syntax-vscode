@@ -4,7 +4,7 @@ export function registerFoldingProvider(context: vscode.ExtensionContext) {
   const selector: vscode.DocumentSelector = { language: 'ac3d', scheme: 'file' };
 
   const provider: vscode.FoldingRangeProvider = {
-    provideFoldingRanges(document, context, token) {
+    provideFoldingRanges(document, _context, _token) {
       const foldingRanges: vscode.FoldingRange[] = [];
       const lines = document.getText().split(/\r?\n/);
 
@@ -61,7 +61,7 @@ export function registerFoldingProvider(context: vscode.ExtensionContext) {
         }
       }
 
-      // Close any unclosed MATERIAL or OBJECT block at EOF
+      // Close any unclosed block at End Of File
       if (materialStart !== null) {
         foldingRanges.push(new vscode.FoldingRange(materialStart, lines.length - 1));
       }

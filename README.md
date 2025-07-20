@@ -73,3 +73,9 @@ kids %d
 * <https://sites.google.com/view/ac3dfileformat/home>
 
 * <https://www.inivis.com/ac3d/man/ac3dfileformat.html>
+
+## For extension developers
+
+To build the extension, first run `npm install` to install all development dependencies.
+
+Then run `npm run package` and it will compile, lint, test, and package the extension into a .vsix file located in the root folder.

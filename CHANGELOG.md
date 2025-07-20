@@ -10,12 +10,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Reduced icon size from 15kb to 1.7kb (Lossly Compressed).
 - Improved snippets file.
+- Updated VSCode engine requirement to ^1.74.0
 
 ### Added
 - Implemented a basic LSP to display information on hover for certain elements.
 - Integrated a Color Picker functionality for MATERIAL lines.
 - Provided a Link Provider function for texture lines.
 - Enabled code folding for certain element blocks.
+- Added a basic Completion Provider.
+- Added Tests with @vscode/test-cli.
+- Added a default icon to the language.
+- Added ESLint configuration for improved code quality.
 
 ### Fixed
 - Corrected the link in the README.

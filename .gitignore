@@ -58,6 +58,9 @@ Temporary Items
 # Ignore all local history of files
 .history
 
+### VisualStudioCode Test ###
+.vscode-test
+
 ### Windows ###
 # Windows thumbnail cache files
 Thumbs.db

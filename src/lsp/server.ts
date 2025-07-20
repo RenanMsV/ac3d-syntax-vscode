@@ -16,7 +16,7 @@ import { hoverInfo } from './hoverInfo';
 const connection = createConnection(ProposedFeatures.all);
 
 // Create a simple text document manager.
-const documents: TextDocuments<TextDocument> = new TextDocuments(TextDocument);
+const documents = new TextDocuments<TextDocument>(TextDocument);
 
 connection.onInitialize((_params: InitializeParams) => {
   return {
@@ -29,10 +29,10 @@ connection.onInitialize((_params: InitializeParams) => {
 
 connection.onHover((params: TextDocumentPositionParams): Hover | null => {
   const document = documents.get(params.textDocument.uri);
-  if (!document) return null;
+  if (!document) {return null;}
 
   const word = getWordAtPosition(document, params.position);
-  if (!word) return null;
+  if (!word) {return null;}
 
   const message = hoverInfo[word];
   if (message) {

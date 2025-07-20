@@ -23,5 +23,33 @@
         "description": "Snippet: Insert a texture.",
         "prefix": "texture",
         "body": "texture \"${1:path/to/texture.png}\""
+    },
+    "Empty AC3Db file": {
+        "description": "Snippet: Empty AC3Db structure.",
+        "prefix": "ac3db",
+        "body": [
+            "AC3Db",
+            "MATERIAL \"ac3dmat0\" rgb 1 1 1  amb 1 1 1  emis 1 1 1  spec 1 1 1  shi 128  trans 0",
+            "OBJECT world",
+            "kids 0"
+        ]
+    },
+    "Empty AC3Dc file": {
+        "description": "Snippet: Empty AC3Dc structure.",
+        "prefix": "ac3dc",
+        "body": [
+            "AC3Dc",
+            "MAT \"ac3dmat0\"",
+            "rgb 1 1 1",
+            "amb 1 1 1",
+            "emis 1 1 1",
+            "spec 1 1 1",
+            "shi 128",
+            "trans 0",
+            "data 0",
+            "ENDMAT",
+            "OBJECT world",
+            "kids 0"
+        ]
     }
 }

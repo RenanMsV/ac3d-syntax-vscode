@@ -14,12 +14,12 @@ class FileLinkProvider implements vscode.DocumentLinkProvider {
       const textLine = document.lineAt(line).text.trim();
 
       // Quick check: skip lines that don't start exactly with "texture "
-      if (!textLine.startsWith('texture ')) continue;
+      if (!textLine.startsWith('texture ')) {continue;}
 
       // Extract the quoted file path after 'texture '
       // Expected format: texture "filename.png"
       const match = textLine.match(/^texture\s+"([^"]+\.(png|jpg|bmp|tga|dds|tif|rgb|gif|ppm))"$/i);
-      if (!match) continue;
+      if (!match) {continue;}
 
       const filePath = match[1];
       const start = textLine.indexOf('"') + 1;
