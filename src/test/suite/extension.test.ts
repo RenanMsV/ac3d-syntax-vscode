@@ -2,14 +2,14 @@ import * as assert from 'assert';
 import * as vscode from 'vscode';
 
 suite('AC3D Extension Test Suite', () => {
-  test('VS Code API is available', () => {
+  test('Can access the VS Code API', () => {
     assert.ok(vscode.version, 'VS Code API not initialized');
     assert.doesNotThrow(() => {
       vscode.window.showInformationMessage('Notification test');
     }, 'VS Code notification could not be displayed');
   });
 
-  test('Extension loads', async () => {
+  test('Can extension activate', async () => {
     const ext = vscode.extensions.getExtension('Renan-MsV.ac3d-syntax');
     assert.ok(ext, 'Extension not found');
     await ext?.activate();
