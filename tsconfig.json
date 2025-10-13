@@ -10,7 +10,7 @@
         "resolveJsonModule": true,
         "esModuleInterop": true,
         "removeComments": true,
-        "importHelpers": true,
+        "importHelpers": false,
     },
     "exclude": ["node_modules", ".vscode-test"]
 }
