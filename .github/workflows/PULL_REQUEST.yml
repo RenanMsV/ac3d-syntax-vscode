@@ -9,7 +9,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-24.04
-    environment: QA
+    environment: DEVQA
 
     steps:
     - uses: actions/checkout@v5
