@@ -4,7 +4,7 @@ on:
   workflow_dispatch:   # allows manual trigger
   push:
     branches:
-      - master         # runs only after code is merged into main
+      - main         # runs only after code is merged into main
 
 jobs:
   deploy:

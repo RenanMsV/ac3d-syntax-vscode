@@ -4,7 +4,7 @@ on:
   workflow_dispatch:   # allows manual trigger
   pull_request:
     branches:
-      - master           # runs on PRs targeting main
+      - main           # runs on PRs targeting main
 
 jobs:
   test:
