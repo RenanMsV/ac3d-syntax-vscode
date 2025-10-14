@@ -1,0 +1,136 @@
+[
+  {
+    "name": "MATERIAL",
+    "sigInfo": {
+      "label": "MATERIAL name rgb R G B amb R G B emis R G B spec R G B shi int trans float",
+      "documentation": {
+        "kind": "markdown",
+        "value": "**A single line describing a material.** These are referenced by the \"mat\" token of a surface. The first \"MATERIAL\" in the file is indexed as zero. Materials are typically listed at the beginning of the file immediately after the header\n\n- name: Name of the material. string - double quoted\n- rgb: The diffuse RGB color value. %f %f %f\n- amb: The ambient RGB color value. %f %f %f\n- emis: The emissive RGB color value. %f %f %f\n- spec: The specular RGB color value. %f %f %f\n- shi: The shininess value. %i [0-128]\n- param: The transparency value. %f [0.0-1.0]\n\nExample:\n\n```MATERIAL \"ac3dmat0\" rgb 1 1 1 amb 1 1 1 emis 1 1 1 spec 1 1 1.0 shi 128```\n"
+      }
+    },
+    "parameters": [
+      {
+        "label": "name",
+        "documentation": "Name of the material. (string - double quoted)",
+        "count": 1
+      },
+      {
+        "label": "rgb R G B",
+        "documentation": "Keyword to define diffuse color",
+        "count": 1
+      },
+      {
+        "label": "rgb R G B",
+        "documentation": "Diffuse color - Red component (float)",
+        "count": 1
+      },
+      {
+        "label": "rgb R G B",
+        "documentation": "Diffuse color - Green component (float)",
+        "count": 1
+      },
+      {
+        "label": "rgb R G B",
+        "documentation": "Diffuse color - Blue component (float)",
+        "count": 1
+      },
+      {
+        "label": "amb R G B",
+        "documentation": "Keyword to define ambient color",
+        "count": 1
+      },
+      {
+        "label": "amb R G B",
+        "documentation": "Ambient color - Red component (float)",
+        "count": 1
+      },
+      {
+        "label": "amb R G B",
+        "documentation": "Ambient color - Green component (float)",
+        "count": 1
+      },
+      {
+        "label": "amb R G B",
+        "documentation": "Ambient color - Blue component (float)",
+        "count": 1
+      },
+      {
+        "label": "emis R G B",
+        "documentation": "Keyword to define emission color",
+        "count": 1
+      },
+      {
+        "label": "emis R G B",
+        "documentation": "Emission color - Red component (float)",
+        "count": 1
+      },
+      {
+        "label": "emis R G B",
+        "documentation": "Emission color - Green component (float)",
+        "count": 1
+      },
+      {
+        "label": "emis R G B",
+        "documentation": "Emission color - Blue component (float)",
+        "count": 1
+      },
+      {
+        "label": "spec R G B",
+        "documentation": "Keyword to define specular color",
+        "count": 1
+      },
+      {
+        "label": "spec R G B",
+        "documentation": "Specular color - Red component (float)",
+        "count": 1
+      },
+      {
+        "label": "spec R G B",
+        "documentation": "Specular color - Green component (float)",
+        "count": 1
+      },
+      {
+        "label": "spec R G B",
+        "documentation": "Specular color - Blue component (float)",
+        "count": 1
+      },
+      {
+        "label": "shi int",
+        "documentation": "Keyword to define shininess value",
+        "count": 1
+      },
+      {
+        "label": "shi int",
+        "documentation": "Shininess value (integer 0 - 128)",
+        "count": 1
+      },
+      {
+        "label": "trans float",
+        "documentation": "Keyword to define transparency",
+        "count": 1
+      },
+      {
+        "label": "trans float",
+        "documentation": "Transparency value (float 0.0 - 1.0)",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "name": "OBJECT",
+    "sigInfo": {
+      "label": "OBJECT type",
+      "documentation": {
+        "kind": "markdown",
+        "value": "**Indicates the start of an object**\n\n- type: world, poly or group"
+      }
+    },
+    "parameters": [
+      {
+        "label": "type",
+        "documentation": "The type of the object (world, poly or group)",
+        "count": 1
+      }
+    ]
+  }
+]

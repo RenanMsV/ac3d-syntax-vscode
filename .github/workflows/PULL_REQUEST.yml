@@ -1,0 +1,46 @@
+name: PULL-REQUEST-QA
+
+on:
+  workflow_dispatch:   # allows manual trigger
+  pull_request:
+    branches:
+      - master           # runs on PRs targeting main
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    environment: QA
+
+    steps:
+    - uses: actions/checkout@v5
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 20
+        cache: 'npm'
+
+    - name: Install required libraries for VSCode and X11, xvfb
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y \
+          libglib2.0-0 \
+          libnss3 \
+          libxss1 \
+          libasound2t64 \
+          libatk1.0-0 \
+          libatk-bridge2.0-0 \
+          libcups2 \
+          libdrm2 \
+          libxcomposite1 \
+          libxdamage1 \
+          libxrandr2 \
+          libgbm1 \
+          libgtk-3-0 \
+          libx11-xcb1 \
+          xvfb
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Test extension
+      run: |
+        xvfb-run -a npm run test

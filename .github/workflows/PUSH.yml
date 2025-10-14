@@ -1,0 +1,27 @@
+name: PUSH-QA
+
+on:
+  workflow_dispatch:      # allows manual trigger
+  push:
+    branches-ignore:      # will trigger on all branches except main
+      - master
+
+jobs:
+  QA:
+    runs-on: ubuntu-latest
+    environment: DEVQA
+
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install node dependencies
+        run: npm install
+
+      - name: Lint and Compile
+        run: |
+          npm run lint
+          npm run compile

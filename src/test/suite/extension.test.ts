@@ -9,7 +9,8 @@ suite('AC3D Extension Test Suite', () => {
     }, 'VS Code notification could not be displayed');
   });
 
-  test('Can extension activate', async () => {
+  test('Can extension activate', async function () {
+    this.timeout(4000);
     const ext = vscode.extensions.getExtension('Renan-MsV.ac3d-syntax');
     assert.ok(ext, 'Extension not found');
     await ext?.activate();

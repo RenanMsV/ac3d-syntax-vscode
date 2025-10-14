@@ -1,14 +1,27 @@
-.vscode/**
-.vscode-test/**
-out/test/**
-src/**
-.gitignore
-**/tsconfig.json
-**/eslint.config.mjs
+# Commonly excluded files/folders
+**/.git
+**/.github
+**/.vscode
+**/.vscode-test
+**/*.gitignore
+**/*.vscodeignore
+**/package-lock.json
+
+# Unwanted file types
 **/*.map
 **/*.ts
-**/.vscode-test.*
-images/**
-!images/icon.png
-!images/icon.svg
-*.ac
+**/*.mjs
+**/*.vsix
+**/*.ac
+**/*.svg
+
+# GitHub local actions / secrets
+**/payload.json
+**/*.vars
+**/*.secrets
+**/*.input
+
+# Project-specific files to exclude
+**/tsconfig.json
+src/**
+out/test/**

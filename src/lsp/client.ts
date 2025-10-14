@@ -21,7 +21,10 @@ export function activateLSPClient(context: vscode.ExtensionContext) {
   // Options to control the language client
   const clientOptions: LanguageClientOptions = {
     // Register the server for ac3d documents by default
-    documentSelector: [{ scheme: 'file', language: 'ac3d' }]
+    documentSelector: [
+      { scheme: 'file', language: 'ac3d' },
+      { scheme: 'untitled', language: 'ac3d' }
+    ]
   };
 
   const client = new LanguageClient('ac3dLanguageServer', 'AC3D Language Server', serverOptions, clientOptions);
