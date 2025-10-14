@@ -2,7 +2,7 @@
 
 [![ac3d-logo](/images/icon.png?raw=true)](https://github.com/RenanMsV/ac3d-syntax-vscode)
 
-[![Version](https://img.shields.io/visual-studio-marketplace/v/Renan-MsV.ac3d-syntax.svg?logo=visual%20studio%20code)](https://marketplace.visualstudio.com/items?itemName=Renan-MsV.ac3d-syntax) [![Rating](https://img.shields.io/visual-studio-marketplace/stars/Renan-MsV.ac3d-syntax.svg?logo=visual%20studio%20code)](https://marketplace.visualstudio.com/items?itemName=Renan-MsV.ac3d-syntax) [![Downloads](https://img.shields.io/visual-studio-marketplace/d/Renan-MsV.ac3d-syntax.svg?logo=visual%20studio%20code)](https://marketplace.visualstudio.com/items?itemName=Renan-MsV.ac3d-syntax) [![Build Status](https://img.shields.io/travis/com/RenanMsV/ac3d-syntax-vscode?logo=travis)](https://travis-ci.com/RenanMsV/ac3d-syntax-vscode) [![GNU General Public License](https://img.shields.io/github/license/RenanMsV/ac3d-syntax-vscode?logo=github)](http://www.gnu.org/licenses/gpl-3.0.en.html)
+[![Version](https://img.shields.io/visual-studio-marketplace/v/Renan-MsV.ac3d-syntax.svg?logo=visual%20studio%20code)](https://marketplace.visualstudio.com/items?itemName=Renan-MsV.ac3d-syntax) [![Rating](https://img.shields.io/visual-studio-marketplace/stars/Renan-MsV.ac3d-syntax.svg?logo=visual%20studio%20code)](https://marketplace.visualstudio.com/items?itemName=Renan-MsV.ac3d-syntax) [![Downloads](https://img.shields.io/visual-studio-marketplace/d/Renan-MsV.ac3d-syntax.svg?logo=visual%20studio%20code)](https://marketplace.visualstudio.com/items?itemName=Renan-MsV.ac3d-syntax) [![Build Status](https://img.shields.io/github/checks-status/renanmsv/ac3d-syntax-vscode/master)](https://github.com/RenanMsV/ac3d-syntax-vscode/actions) [![GNU General Public License](https://img.shields.io/github/license/RenanMsV/ac3d-syntax-vscode?logo=github)](http://www.gnu.org/licenses/gpl-3.0.en.html)
 
 Basic LSP, syntax highlighting and snippets for [AC3D files](https://inivis.com). Supports AC3Db and AC3Dc file formats.
 
@@ -12,21 +12,17 @@ The AC3D file format is ascii text and is very simple to parse. It's also very e
 
 ## Features
 
-**Hover**: Hover elements to see more info about them
+**Hover Information**: Hover over elements to instantly view detailed information.  
+![Hover Information](/images/hoverForInfo.png?raw=true)
 
-![hover for info](/images/hoverForInfo.png?raw=true)
+**Color Picker**: Quickly customize material colors using an intuitive color selection tool.  
+![Color Picker](/images/colorProvider.png?raw=true)
 
-**Color Picker**: Easily change the Material colors with a simple picker
+**Link Provider**: Easily locate and open texture files referenced in the 3D model by holding **CTRL** and clicking the link.  
+![Link Provider](/images/linkProvider.png?raw=true)
 
-![color picker](/images/colorProvider.png?raw=true)
-
-**Link Provider**: Easily locate textures used in the 3D model by pressing CTRL and clicking it
-
-![link provider](/images/linkProvider.png?raw=true)
-
-**Folding Provider**: Use folding to hide element groups
-
-![folding provider](/images/foldingProvider.png?raw=true)
+**Folding Provider**: Organize your workspace efficiently by folding and unfolding element groups.  
+![Folding Provider](/images/foldingProvider.png?raw=true)
 
 ## The AC3D file format:
 
