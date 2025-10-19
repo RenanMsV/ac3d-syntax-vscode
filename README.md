@@ -8,10 +8,8 @@
 [![Build Status](https://img.shields.io/github/actions/workflow/status/RenanMsV/ac3d-syntax-vscode/DEPLOY.yml)](https://github.com/RenanMsV/ac3d-syntax-vscode/tree/main/.github/workflows)
 [![GNU General Public License](https://img.shields.io/github/license/RenanMsV/ac3d-syntax-vscode?logo=github)](http://www.gnu.org/licenses/gpl-3.0.en.html)
 
-[![Install from VS Marketplace](https://img.shields.io/badge/Install-VS%20Marketplace-blue?style=for-the-badge&logo=vs-code
-)](https://marketplace.visualstudio.com/items?itemName=Renan-MsV.ac3d-syntax)  
-[![Install from Open VSX](https://img.shields.io/badge/Install-Open%20VSX-purple?style=for-the-badge&logo=vs-code
-)](https://open-vsx.org/extension/Renan-MsV/ac3d-syntax)
+[![Install from VS Marketplace](https://img.shields.io/badge/Install-VS%20Marketplace-blue?style=for-the-badge&logo=vs-code)](https://marketplace.visualstudio.com/items?itemName=Renan-MsV.ac3d-syntax)  
+[![Install from Open VSX](https://img.shields.io/badge/Install-Open%20VSX-purple?style=for-the-badge&logo=vs-code)](https://open-vsx.org/extension/Renan-MsV/ac3d-syntax)
 
 Basic LSP, syntax highlighting and snippets for [AC3D files](https://inivis.com). Supports AC3Db and AC3Dc file formats.
 
